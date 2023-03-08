@@ -23,6 +23,7 @@
     <script src="../JAVASCRIPT/assembleia.js"></script>
     <script src="../JAVASCRIPT/collap.js"></script>
     <script src="../JAVASCRIPT/empresas.js"></script>
+    <script src="../JAVASCRIPT/changePDF.js"></script>
 
     <!--Título-->
     <title>Portal RF</title>
@@ -78,20 +79,89 @@
 
         <div class="barra-pesquisa">
 
-            <input type="text" id="fruitSearch" placeholder="Search for a fruit"
-                onkeydown="if(event.keyCode===13){filterFruits()}">
-            <button onclick="filterFruits()">Search</button>
+            <input type="text" id="companysSearch" placeholder="Search for a company"
+                onkeydown="if(event.keyCode===13){filterCompanys()}">
+            <button onclick="filterCompanys(), searchPDF()">Search</button>
 
-            <select id="fruitList">
-                <option value="apple">Apple</option>
-                <option value="banana">Banana</option>
-                <option value="cherry">Cherry</option>
+            <select id="companysList">
             </select>
+
         </div>
+
+        <iframe id="pdfViewer" src="../PDF/empresa1.pdf"></iframe>
 
         <!--PDF HOLDER-->
 
-        <div>PDF</div>
+        <div>
+            <style>
+                #fruitList {
+                    display: none;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                #fruitList li {
+                    margin: 5px 0;
+                    padding: 5px;
+                    border: 1px solid #ccc;
+                    background-color: #f9f9f9;
+                }
+            </style>
+            <script>
+                const fruits = [
+                    "apple",
+                    "apple2",
+                    "apple3",
+                    "apple4",
+                    "apple5",
+                    "apple6",
+                    "banana",
+                    "cherry",
+                    "date",
+                    "elderberry",
+                    "fig",
+                    "grape",
+                    "honeydew",
+                    "kiwi",
+                    "lemon",
+                    "mango",
+                    "nectarine",
+                    "orange",
+                    "pear",
+                    "quince",
+                    "raspberry",
+                    "strawberry",
+                    "tangerine",
+                    "watermelon"
+                ];
+
+                function updateFruitList() {
+                    const input = document.getElementById("fruitInput");
+                    const filter = input.value.toLowerCase();
+
+                    const filteredFruits = fruits.filter(function (fruit) {
+                        return fruit.startsWith(filter);
+                    }).slice(0, 5);
+
+                    const list = document.getElementById("fruitList");
+                    list.innerHTML = "";
+                    if (filteredFruits.length > 0) {
+                        list.style.display = "block";
+                        filteredFruits.forEach(function (fruit) {
+                            const item = document.createElement("li");
+                            item.textContent = fruit;
+                            list.appendChild(item);
+                        });
+                    } else {
+                        list.style.display = "none";
+                    }
+                }
+            </script>
+            <label for="fruitInput">Search for a fruit:</label>
+            <input type="text" id="fruitInput" oninput="updateFruitList()">
+            <ul id="fruitList"></ul>
+        </div>
 
     </div>
 
