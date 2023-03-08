@@ -18,7 +18,11 @@
     <!--Style-->
     <link rel="stylesheet" type="text/css" href="../STYLE/pages.css">
 
+
     <!--Scripts-->
+    <script src="../JAVASCRIPT/assembleia.js"></script>
+    <script src="../JAVASCRIPT/collap.js"></script>
+    <script src="../JAVASCRIPT/empresas.js"></script>
 
     <!--Título-->
     <title>Portal RF</title>
@@ -41,22 +45,54 @@
             <div class="menu2">
                 <div>
                     <ul>
-                        <li><a href="index.html">Dynamic</a></li>
-                        <li><a href="vp.html">VP Strategy</a></li>
-                        <li><a href="prev.html">Previdência</a></li>
-                        <li><a href="empresas.html">Empresas</a></li>
-                        <li><a href="arquivos.html">Arquivos</a></li>
-                        <li><a Onclick='sairlogin()' href="./login.html">Sair</a></li>
+                        <li><a href="#" onclick="assembleia()">Assembleias</a></li>
+                        <li><a href="#" onclick="primarias()">Primárias</a></li>
+                        <li><a href="#" onclick="secundario()">Secundário</a></li>
+                        <li><a href="#" onclick="operacoes()">Operações</a></li>
+                        <li><a href="#" onclick="empresas()">Empresas</a></li>
+                        <a href="../index.html"><img src="../IMG/homeicon.png" alt="Return"
+                                class="homebutton-light"></a>
+                        <!--<li><a Onclick='sairlogin()' href="./login.html"></a></li>-->
                     </ul>
                 </div>
             </div>
+
         </div>
     </div>
 
-    <div id="container">
+    <div id="container-assembleia">
+    </div>
+
+    <div id="container-primarias">
+    </div>
+
+    <div id="container-secundario">
+    </div>
+
+    <div id="container-operacoes">
+    </div>
+
+    <div id="container-empresas">
+
+        <!--Barra de Pesquisa-->
+
+        <div class="barra-pesquisa">
+
+            <input type="text" id="fruitSearch" placeholder="Search for a fruit"
+                onkeydown="if(event.keyCode===13){filterFruits()}">
+            <button onclick="filterFruits()">Search</button>
+
+            <select id="fruitList">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+
+        <!--PDF HOLDER-->
 
     </div>
-    </div>
+
 
 </body>
 
