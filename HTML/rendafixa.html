@@ -22,8 +22,8 @@
     <!--Scripts-->
     <script src="../JAVASCRIPT/assembleia.js"></script>
     <script src="../JAVASCRIPT/collap.js"></script>
-    <script src="../JAVASCRIPT/empresas.js"></script>
     <script src="../JAVASCRIPT/changePDF.js"></script>
+
 
     <!--Título-->
     <title>Portal RF</title>
@@ -31,7 +31,7 @@
     <!--End Point-->
 </head>
 
-<body>
+<body onload="assembleia()">
 
     <header class="menu-principal">
         <div class="header-1">
@@ -76,8 +76,7 @@
     <div id="container-empresas">
 
         <!--Barra de Pesquisa-->
-
-        <div class="barra-pesquisa">
+        <!--   <div class="barra-pesquisa">
 
             <input type="text" id="companysSearch" placeholder="Search for a company"
                 onkeydown="if(event.keyCode===13){filterCompanys()}">
@@ -86,9 +85,8 @@
             <select id="companysList">
             </select>
 
-        </div>
+        </div>-->
 
-        <iframe id="pdfViewer" src="../PDF/empresa1.pdf"></iframe>
 
         <!--PDF HOLDER-->
 
@@ -108,61 +106,83 @@
                     background-color: #f9f9f9;
                 }
             </style>
+
             <script>
-                const fruits = [
-                    "apple",
-                    "apple2",
-                    "apple3",
-                    "apple4",
-                    "apple5",
-                    "apple6",
-                    "banana",
-                    "cherry",
-                    "date",
-                    "elderberry",
-                    "fig",
-                    "grape",
-                    "honeydew",
-                    "kiwi",
-                    "lemon",
-                    "mango",
-                    "nectarine",
-                    "orange",
-                    "pear",
-                    "quince",
-                    "raspberry",
-                    "strawberry",
-                    "tangerine",
-                    "watermelon"
-                ];
 
-                function updateFruitList() {
-                    const input = document.getElementById("fruitInput");
-                    const filter = input.value.toLowerCase();
+                function searchPDF() {
+                    const pdfNameInput = document.getElementById('fruitInput');
+                    const pdfViewer = document.getElementById('pdfViewer');
 
-                    const filteredFruits = fruits.filter(function (fruit) {
-                        return fruit.startsWith(filter);
-                    }).slice(0, 5);
 
-                    const list = document.getElementById("fruitList");
-                    list.innerHTML = "";
-                    if (filteredFruits.length > 0) {
-                        list.style.display = "block";
-                        filteredFruits.forEach(function (fruit) {
-                            const item = document.createElement("li");
-                            item.textContent = fruit;
-                            list.appendChild(item);
-                        });
-                    } else {
-                        list.style.display = "none";
+                    const pdfName = pdfNameInput.value.trim(); // Trim whitespace from input value
+                    if (pdfName !== '') { // Check that input value is not empty
+                        const pdfPath = `../PDF/${pdfName}.pdf`;
+                        pdfViewer.src = pdfPath;
                     }
                 }
+
+                function updateFruitList() {
+                    fetch('http://127.0.0.1:5500/EXCEL/empresas.csv', { headers: { 'Content-Type': 'text/csv; charset=ISO-8859-1' } })
+                        .then(response => response.text())
+                        .then(data => {
+                            // Split the CSV data by lines and remove the header row
+                            const rows = data.split('\n').slice(1);
+
+                            // Get the names from the first column of the CSV
+                            const fruits = rows.map(row => row.split(',')[0]);
+
+                            const input = document.getElementById("fruitInput");
+                            const filter = input.value.toUpperCase();
+
+                            const filteredFruits = fruits.filter(function (fruit) {
+                                return fruit.startsWith(filter);
+                            }).slice(0, 5);
+
+                            const list = document.getElementById("fruitList");
+                            list.innerHTML = "";
+                            if (filteredFruits.length > 0) {
+                                list.style.display = "block";
+                                filteredFruits.forEach(function (fruit) {
+                                    const item = document.createElement("li");
+                                    item.textContent = fruit;
+                                    item.addEventListener("click", function () {
+                                        input.value = fruit;
+                                        list.style.display = "none";
+                                        searchPDF();
+                                    });
+                                    list.appendChild(item);
+                                });
+                            } else {
+                                list.style.display = "none";
+                            }
+
+                            document.addEventListener("click", function (event) {
+                                const input = document.getElementById("fruitInput");
+                                const list = document.getElementById("fruitList");
+                                if (event.target !== input && event.target.parentNode !== list) {
+                                    list.style.display = "none";
+                                }
+                            });
+
+
+                        });
+                }
+
             </script>
-            <label for="fruitInput">Search for a fruit:</label>
-            <input type="text" id="fruitInput" oninput="updateFruitList()">
+            <div class="centro">
+                <label for="fruitInput"> <strong>DIGITE O NOME DA EMPRESA:</strong>
+
+                </label>
+                <input type="text" id="fruitInput" oninput="updateFruitList()">
+            </div>
+
             <ul id="fruitList"></ul>
         </div>
 
+        <!--PDF FINAL-->
+        <div class="centro-2">
+            <iframe id="pdfViewer" src="../PDF/AES BRASIL.pdf"></iframe>
+        </div>
     </div>
 
 

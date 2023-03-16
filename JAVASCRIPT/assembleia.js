@@ -3,7 +3,12 @@ function assembleia() {
     reset()
     const div = document.getElementById('container-assembleia');
     div.style.display = 'block';
-    div.innerHTML = `<h5> SHEETS AQUI </h5>`
+    div.innerHTML = `    <div id="container">
+    <iframe class="googlesheets"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpuf_Vbeg095025hVjIitjIEiFKYZsO7OEUP9_GLR5Yz2COUOEI7-QlRK9UIZRt-q-wSOGAL4PEn7p/pubhtml"
+        scrolling="no"></iframe>
+</div>
+`
 }
 
 
@@ -11,10 +16,8 @@ function primarias() {
     reset()
     const div = document.getElementById('container-primarias');
     div.style.display = 'block';
-    div.innerHTML = `    <div id="container">
-    <iframe class="googlesheets"
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTVr9O0zxDJpdIjoCNRzI46fznfyAdlmPrPRZore9nFY-SkxTV-DEYsgmFLer4yzA/pubhtml"
-        scrolling="no"></iframe>
+    div.innerHTML = `    <div class="embreve">
+    <h1> EM BREVE </h1>
 </div>
 `
 
@@ -24,14 +27,20 @@ function secundario() {
     reset()
     const div = document.getElementById('container-secundario');
     div.style.display = 'block';
-    div.innerHTML = `<h5> SHEETS AQUI </h5>`
+    div.innerHTML = `    <div class="embreve">
+    <h1> EM BREVE </h1>
+</div>
+`
 }
 
 function operacoes() {
     reset()
     const div = document.getElementById('container-operacoes');
     div.style.display = 'block';
-    div.innerHTML = `<h5> SHEETS AQUI </h5>`
+    div.innerHTML = `    <div class="embreve">
+    <h1> EM BREVE </h1>
+</div>
+`
 }
 
 function empresas() {

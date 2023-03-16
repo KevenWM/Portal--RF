@@ -1,8 +1,6 @@
 
 function searchPDF() {
-    console.log('oi')
-
-    const pdfNameInput = document.getElementById('companysSearch');
+    const pdfNameInput = document.getElementById('fruitInput');
     const pdfViewer = document.getElementById('pdfViewer');
 
 
@@ -11,7 +9,6 @@ function searchPDF() {
         const pdfPath = `../PDF/${pdfName}.pdf`;
         pdfViewer.src = pdfPath;
     }
-
 }
 
 
