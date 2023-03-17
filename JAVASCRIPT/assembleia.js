@@ -16,8 +16,10 @@ function primarias() {
     reset()
     const div = document.getElementById('container-primarias');
     div.style.display = 'block';
-    div.innerHTML = `    <div class="embreve">
-    <h1> EM BREVE </h1>
+    div.innerHTML = `  
+    <iframe class="googlesheets"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSW26MmFnt_z3VnAK0akIh0s8f5aUJblNBbqqUjtaLmq0vg4DR4L9nANq0ZjQkMmVNqR9swZeK6mHUx/pubhtml"
+        scrolling="no"></iframe>
 </div>
 `
 
@@ -37,8 +39,10 @@ function operacoes() {
     reset()
     const div = document.getElementById('container-operacoes');
     div.style.display = 'block';
-    div.innerHTML = `    <div class="embreve">
-    <h1> EM BREVE </h1>
+    div.innerHTML = `   
+    <iframe class="googlesheets"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQViUX4lCcYQi_X5rJ8gxSVN92XfxM-P16gIRT3W5lggyT6f1jvTHgoAho1_mp52yVoqe6YP6LYg5xC/pubhtml"
+        scrolling="no"></iframe>
 </div>
 `
 }

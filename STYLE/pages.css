@@ -139,7 +139,7 @@ ul {
 }
 
 #container-assembleia {
-    display: block;
+    display: none;
     width: 100%;
     margin: auto;
     height: calc(100vh - 140px);
