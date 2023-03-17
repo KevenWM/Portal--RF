@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    fetch('http://127.0.0.1:5500/EXCEL/empresas.csv', { headers: { 'Content-Type': 'text/csv; charset=ISO-8859-1' } })
+    fetch('https://github.com/KevenWM/Portal--RF.git/EXCEL/empresas.csv', { headers: { 'Content-Type': 'text/csv; charset=ISO-8859-1' } })//http://127.0.0.1:5500/EXCEL
         .then(response => response.text())
         .then(data => {
             // Split the CSV data by lines and remove the header row
