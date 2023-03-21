@@ -176,6 +176,20 @@ ul {
     height: calc(100vh - 140px);
 }
 
+#container-estruturacao {
+    display: none;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 140px);
+}
+
+#container-cartas {
+    display: none;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 140px);
+}
+
 .barra-pesquisa {
     width: 100%;
     justify-content: center;

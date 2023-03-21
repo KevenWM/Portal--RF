@@ -22,7 +22,6 @@ function primarias() {
         scrolling="no"></iframe>
 </div>
 `
-
 }
 
 function secundario() {
@@ -51,6 +50,27 @@ function empresas() {
     reset()
     const div = document.getElementById('container-empresas');
     div.style.display = 'block';
+}    
+
+
+function estruturacao() {
+    reset()
+    const div = document.getElementById('container-estruturacao');
+    div.style.display = 'block';
+    div.innerHTML = `    <div class="embreve">
+    <h1> EM BREVE </h1>
+</div>
+`
+}
+
+function cartas() {
+    reset()
+    const div = document.getElementById('container-cartas');
+    div.style.display = 'block';
+    div.innerHTML = `    <div class="embreve">
+    <h1> EM BREVE </h1>
+</div>
+`
 }
 
 function reset() {
@@ -60,14 +80,16 @@ function reset() {
     const div3 = document.getElementById('container-secundario');
     const div4 = document.getElementById('container-operacoes');
     const div5 = document.getElementById('container-empresas');
+    const div6 = document.getElementById('container-estruturacao');
+    const div7 = document.getElementById('container-cartas');
 
     div1.style.display = 'none';
     div2.style.display = 'none';
     div3.style.display = 'none';
     div4.style.display = 'none';
-    div5.style.display = 'none';
-
-
+    div5.style.display = 'block';
+    div6.style.display = 'none';
+    div7.style.display = 'none';
 }
 
 /* Seleciona o elmento da página que quero editar*/
