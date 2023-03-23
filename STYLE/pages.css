@@ -237,6 +237,13 @@ ul {
     height: 100%;
 }
 
+.centro-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+
 #fruitInput {
     margin-left: 10px;
     border-color: rgb(0, 0, 0);

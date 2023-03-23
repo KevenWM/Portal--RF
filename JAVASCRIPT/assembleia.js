@@ -54,15 +54,15 @@ function empresas() {
 
 
 function estruturacao() {
-    reset()
+    reset();
     const div = document.getElementById('container-estruturacao');
     div.style.display = 'block';
-    div.innerHTML = `    
-    <iframe 
-    src="../HTML/PDFESTRUTURACAO%20DE%20DIVIDAS.pdf"" type="application/pdf" width="100%" height="100%" />
-</div>
-`
-}
+    div.innerHTML = `
+    <div class="centro-2">
+            <iframe id="pdfViewer" src="../PDF/ESTRUTURACAO DE DIVIDAS.pdf"></iframe>
+        </div>
+    `
+  }
 
 function cartas() {
     reset()
