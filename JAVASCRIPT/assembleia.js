@@ -57,8 +57,9 @@ function estruturacao() {
     reset()
     const div = document.getElementById('container-estruturacao');
     div.style.display = 'block';
-    div.innerHTML = `    <div class="embreve">
-    <h1> EM BREVE </h1>
+    div.innerHTML = `    
+    <iframe 
+    src="../HTML/PDFESTRUTURACAO%20DE%20DIVIDAS.pdf"" type="application/pdf" width="100%" height="100%" />
 </div>
 `
 }
@@ -87,7 +88,7 @@ function reset() {
     div2.style.display = 'none';
     div3.style.display = 'none';
     div4.style.display = 'none';
-    div5.style.display = 'block';
+    div5.style.display = 'none';
     div6.style.display = 'none';
     div7.style.display = 'none';
 }
