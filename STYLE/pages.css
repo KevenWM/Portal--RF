@@ -255,3 +255,51 @@ ul {
     width: 80%;
     height: 100%;
 }
+
+#container-veneto30 {
+    display: none;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 140px);
+    background-color: antiquewhite;
+}
+
+#container-vpmulti {
+    display: none;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 140px);
+    background-color: rgb(252, 224, 187);
+}
+
+#container-vpprev {
+    display: none;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 140px);
+    background-color: rgb(255, 206, 143);
+}
+
+#container-vpfidc {
+    display: none;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 140px);
+    background-color: rgb(255, 182, 87);
+}
+
+#container-vplatache {
+    display: none;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 140px);
+    background-color: rgb(255, 163, 43);
+}
+
+#container-vpfip {
+    display: none;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 140px);
+    background-color: rgb(255, 145, 0);
+}
