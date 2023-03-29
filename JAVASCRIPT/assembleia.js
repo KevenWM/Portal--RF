@@ -50,7 +50,7 @@ function empresas() {
     reset()
     const div = document.getElementById('container-empresas');
     div.style.display = 'block';
-}    
+}
 
 
 function estruturacao() {
@@ -62,7 +62,7 @@ function estruturacao() {
             <iframe id="pdfViewer" src="../PDF/ESTRUTURACAO DE DIVIDAS.pdf"></iframe>
         </div>
     `
-  }
+}
 
 function cartas() {
     reset()
