@@ -10,7 +10,7 @@ function searchPDF() {
         const pdfPath = `../PDF/${pdfName}.pdf`;
         const audioPath = `../AUDIO/${pdfName}.m4a`;
         pdfViewer.src = pdfPath;
-        audio.src = audioPath
+        audio.src = audioPath;
     }
 }
 
