@@ -28,7 +28,7 @@ function veneto30() {
         scrolling="no" frameborder="0"></iframe>
 </div>`
 
-    pdf.innerHTML = `<embed id="" width="80%" height="500px" src="../PDF/MRV.pdf" type="text/pdf">`
+    pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/EM BREVE.pdf" type="text/pdf">`
 }
 
 function vpmulti() {
@@ -57,7 +57,7 @@ function vpmulti() {
           scrolling="no" frameborder="0"></iframe>
   </div>`
 
-    pdf.innerHTML = `<embed id="" width="80%" height="500px" src="../PDF/AEGEA.pdf" type="text/pdf">`
+    pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/VP MULTI SELECTION FIC FIM.pdf" type="text/pdf">`
 
 }
 
@@ -90,7 +90,7 @@ function vpprev() {
      scrolling="no" frameborder="0"></iframe>
 </div>`
 
-    pdf.innerHTML = `<embed id="" width="80%" height="500px" src="../PDF/AERIS.pdf" type="text/pdf">`
+    pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/VP PREVIDENCIA.pdf" type="text/pdf">`
 }
 
 function vpfidc() {
@@ -122,7 +122,7 @@ function vpfidc() {
      scrolling="no" frameborder="0"></iframe>
 </div>`
 
-    pdf.innerHTML = `<embed id="" width="80%" height="500px" src="../PDF/BRF.pdf" type="text/pdf">`
+    pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/EM BREVE.pdf" type="text/pdf">`
 }
 
 function vplatache() {
@@ -154,7 +154,7 @@ function vplatache() {
      scrolling="no" frameborder="0"></iframe>
 </div>`
 
-    pdf.innerHTML = `<embed id="" width="80%" height="500px" src="../PDF/BRZ.pdf" type="text/pdf">`
+    pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/EM BREVE.pdf" type="text/pdf">`
 }
 
 function vpfip() {
@@ -187,4 +187,4 @@ function vpfip() {
 </div>`
 }
 
-pdf.innerHTML = `<embed id="" width="80%" height="500px" src="../PDF/CEMIG.pdf" type="text/pdf">`
+pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/EM BREVE.pdf" type="text/pdf">`

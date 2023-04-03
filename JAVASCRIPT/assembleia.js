@@ -28,8 +28,10 @@ function secundario() {
     reset()
     const div = document.getElementById('container-secundario');
     div.style.display = 'block';
-    div.innerHTML = `    <div class="embreve">
-    <h1> EM BREVE </h1>
+    div.innerHTML = `
+    <iframe class="googlesheets"
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzAoqf1NsyO0egY2Oxzc7Kw5y-rW3c44sa3azSteJSPIV3NST8jBrffv7dq8is8_A0HQDLM_aenWsk/pubhtml"
+    scrolling="no"></iframe>
 </div>
 `
 }
