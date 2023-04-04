@@ -60,9 +60,11 @@ function estruturacao() {
     const div = document.getElementById('container-estruturacao');
     div.style.display = 'block';
     div.innerHTML = `
+    <br>
     <div class="centro-2">
             <iframe id="pdfViewer" src="../PDF/ESTRUTURACAO DE DIVIDAS.pdf"></iframe>
         </div>
+        <br>
     `
 }
 

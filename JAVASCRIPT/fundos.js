@@ -10,23 +10,22 @@ function veneto30() {
     nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VÊNETO 30</h3>`
 
     //Muda a descrição
-    descrip.innerHTML = `<p class="title-dmc-desc">Descrição do Fundo Veneto 30 Lorem ipsum dolor sit amet. 
-    Non reiciendis dolor aut harum error aut delectus aliquam ut doloremque asperiores qui dolores dolorem. 
-    Ut corporis libero et ipsum animi et expedita porro. Eum illum voluptas et nihil quam vel repellat 
-    exercitationem 33 voluptatem atque ab aliquam sint eos quam porro. Et ullam error 33 enim Quis eum aspernatur nulla aut impedit dignissimos.</p>`
+    descrip.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
 
     //Muda o link do maisretorno
-    iframe.innerHTML = `<div class="div-status">
-    <iframe class="fundos-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
-        scrolling="no" frameborder="0"></iframe>
-</div>`
+    iframe.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    
+    //`<div class="div-status">
+    //<iframe class="fundos-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
+        //scrolling="no" frameborder="0"></iframe>
+//</div>`
 
     // Muda a tabela de rendimentos
-
-    tabela.innerHTML = `<div class="div-status-tabela">
-    <iframe class="tabela-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
-        scrolling="no" frameborder="0"></iframe>
-</div>`
+    iframe.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    //tabela.innerHTML = `<div class="div-status-tabela">
+    //<iframe class="tabela-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
+    //    scrolling="no" frameborder="0"></iframe>
+//</div>`
 
     pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/EM BREVE.pdf" type="text/pdf">`
 }
@@ -41,10 +40,7 @@ function vpmulti() {
     nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VP MULTI</h3>`
 
     //Muda a descrição
-    descrip.innerHTML = `<p class="title-dmc-desc">Descrição do Fundo Vp Multi Lorem ipsum dolor sit amet. 
-    Non reiciendis dolor aut harum error aut delectus aliquam ut doloremque asperiores qui dolores dolorem. 
-    Ut corporis libero et ipsum animi et expedita porro. Eum illum voluptas et nihil quam vel repellat 
-    exercitationem 33 voluptatem atque ab aliquam sint eos quam porro. Et ullam error 33 enim Quis eum aspernatur nulla aut impedit dignissimos.</p>`
+    descrip.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
 
     iframe.innerHTML = `<div class="div-status"> <iframe id="iframe-maisret" class="fundos-maisret"
     src="https://maisretorno.com/fundo/vp-multi-selection-fic-fim" scrolling="no"
@@ -72,21 +68,18 @@ function vpprev() {
     nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VP PREV</h3>`
 
     //Muda a descrição
-    descrip.innerHTML = `<p class="title-dmc-desc">Descrição do Fundo VP Prev Lorem ipsum dolor sit amet. 
-    Non reiciendis dolor aut harum error aut delectus aliquam ut doloremque asperiores qui dolores dolorem.
-     Ut corporis libero et ipsum animi et expedita porro. Eum illum voluptas et nihil quam vel repellat 
-     exercitationem 33 voluptatem atque ab aliquam sint eos quam porro. Et ullam error 33 enim Quis eum aspernatur nulla aut impedit dignissimos.</p>`
+    descrip.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
 
     //Muda o link do maisretorno
 
     iframe.innerHTML = `<div class="div-status">
-    <iframe class="fundos-maisret" src="https://maisretorno.com/fundo/veneto-70-icatu-previdenciario-fim"
+    <iframe class="fundos-maisret" src="https://maisretorno.com/fundo/vp-previdencia-premium-fie-fi-rf-cp"
         scrolling="no" frameborder="0"></iframe>
 </div>`
     // Muda a tabela de rendimentos
 
     tabela.innerHTML = `<div class="div-status-tabela">
- <iframe class="tabela-maisret" src="https://maisretorno.com/fundo/veneto-70-icatu-previdenciario-fim"
+ <iframe class="tabela-maisret" src="https://maisretorno.com/fundo/vp-previdencia-premium-fie-fi-rf-cp"
      scrolling="no" frameborder="0"></iframe>
 </div>`
 
@@ -104,23 +97,23 @@ function vpfidc() {
     nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VP FIDC</h3>`
 
     //Muda a descrição
-    descrip.innerHTML = `<p class="title-dmc-desc">Descrição do Fundo VP FID Lorem ipsum dolor sit amet.
-     Non reiciendis dolor aut harum error aut delectus aliquam ut doloremque asperiores qui dolores dolorem.
-      Ut corporis libero et ipsum animi et expedita porro. Eum illum voluptas et nihil quam vel repellat 
-      exercitationem 33 voluptatem atque ab aliquam sint eos quam porro. Et ullam error 33 enim Quis eum aspernatur nulla aut impedit dignissimos.C</p>`
+    descrip.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
 
     //Muda o link do maisretorno
 
-    iframe.innerHTML = `<div class="div-status">
-    <iframe class="fundos-maisret" src="https://maisretorno.com/fundo/veneto-70-icatu-previdenciario-fim"
-        scrolling="no" frameborder="0"></iframe>
-</div>`
+    iframe.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    //`<div class="div-status">
+    //<iframe class="fundos-maisret" src="https://maisretorno.com/fundo/veneto-70-icatu-previdenciario-fim"
+    //    scrolling="no" frameborder="0"></iframe>
+//</div>`
     // Muda a tabela de rendimentos
 
-    tabela.innerHTML = `<div class="div-status-tabela">
- <iframe class="tabela-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
-     scrolling="no" frameborder="0"></iframe>
-</div>`
+    tabela.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    
+    //`<div class="div-status-tabela">
+    //<iframe class="tabela-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
+    // scrolling="no" frameborder="0"></iframe>
+//</div>`
 
     pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/EM BREVE.pdf" type="text/pdf">`
 }
@@ -136,25 +129,22 @@ function vplatache() {
     nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VP LATACHE</h3>`
 
     //Muda a descrição
-    descrip.innerHTML = `<p class="title-dmc-desc">Descrição do Fundo VP Latache Lorem ipsum dolor sit amet. 
-    Non reiciendis dolor aut harum error aut delectus aliquam ut doloremque asperiores qui dolores dolorem. 
-    Ut corporis libero et ipsum animi et expedita porro. Eum illum voluptas et nihil quam vel repellat
-     exercitationem 33 voluptatem atque ab aliquam sint eos quam porro. Et ullam error 33 enim Quis eum aspernatur nulla aut impedit dignissimos.</p>`
+    descrip.innerHTML = `<p class="title-dmc-desc">Fundo desenhado junto à Latache Capital e com o objetivo de investir no Latache Crédito Estruturado FIM CP. A Latache conta com cerca de R$ 1 bilhão sob gestão e tem o Pedro Sternick como sócio gestor da companhia. A estratégia busca atuar como hedge fund de crédito com mandato híbrido, realizando investimentos oportunísticos em high yield, crédito estruturado e special situations. O produto investido tem benchmark CDI e liquidação em D+723, enquanto que o fundo da Vêneto tem cotização em D+725 e liquidação em D+757.</p>`
 
     //Muda o link do maisretorno
 
     iframe.innerHTML = `<div class="div-status">
-    <iframe class="fundos-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
+    <iframe class="fundos-maisret" src="https://maisretorno.com/fundo/vp-latache-special-situations-fic-fim-cp"
         scrolling="no" frameborder="0"></iframe>
 </div>`
     // Muda a tabela de rendimentos
 
     tabela.innerHTML = `<div class="div-status-tabela">
- <iframe class="tabela-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
+ <iframe class="tabela-maisret" src="https://maisretorno.com/fundo/vp-latache-special-situations-fic-fim-cp"
      scrolling="no" frameborder="0"></iframe>
 </div>`
 
-    pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/EM BREVE.pdf" type="text/pdf">`
+    pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/VP LATACHE.pdf" type="text/pdf">`
 }
 
 function vpfip() {
@@ -168,23 +158,22 @@ function vpfip() {
     nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VP FIP</h3>`
 
     //Muda a descrição
-    descrip.innerHTML = `<p class="title-dmc-desc">Descrição do Fundo VP FIP Lorem ipsum dolor sit amet.
-     Non reiciendis dolor aut harum error aut delectus aliquam ut doloremque asperiores qui dolores dolorem.
-      Ut corporis libero et ipsum animi et expedita porro. Eum illum voluptas et nihil quam vel repellat 
-      exercitationem 33 voluptatem atque ab aliquam sint eos quam porro. Et ullam error 33 enim Quis eum aspernatur nulla aut impedit dignissimos.</p>`
+    descrip.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
 
     //Muda o link do maisretorno
 
-    iframe.innerHTML = `<div class="div-status">
-    <iframe class="fundos-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
-        scrolling="no" frameborder="0"></iframe>
-</div>`
+    iframe.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    //`<div class="div-status">
+    //<iframe class="fundos-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
+    //    scrolling="no" frameborder="0"></iframe>
+//</div>`
     // Muda a tabela de rendimentos
 
-    tabela.innerHTML = `<div class="div-status-tabela">
- <iframe class="tabela-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
-     scrolling="no" frameborder="0"></iframe>
-</div>`
+    tabela.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    //`<div class="div-status-tabela">
+    //<iframe class="tabela-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
+    // scrolling="no" frameborder="0"></iframe>
+//</div>`
 }
 
 pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/EM BREVE.pdf" type="text/pdf">`
