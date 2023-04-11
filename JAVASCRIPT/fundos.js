@@ -40,7 +40,7 @@ function vpmulti() {
     nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VP MULTI</h3>`
 
     //Muda a descrição
-    descrip.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    descrip.innerHTML = `<p class="title-dmc-desc">O fundo tem como objetivo compor uma carteira diversificada com exposição à fundos multimercado,  selecionados de forma quantitativa e qualitativa, pela equipe de gestão da Vêneto com o objetivo de obter ganhos de capital mediante operações nos mercados de juros, câmbio, ações, commodities e dívida, utilizando-se dos instrumentos disponíveis tanto nos mercados à vista quanto nos mercados de derivativos, podendo recorrer, entre outros, a mecanismos de hedge, de arbitragem e alavancagem para alcançar seus objetivos.</p>`
 
     iframe.innerHTML = `<div class="div-status"> <iframe id="iframe-maisret" class="fundos-maisret"
     src="https://maisretorno.com/fundo/vp-multi-selection-fic-fim" scrolling="no"
