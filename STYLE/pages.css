@@ -303,3 +303,13 @@ ul {
     height: calc(100vh - 140px);
     background-color: rgb(255, 145, 0);
 }
+
+.back-capa {
+    background-image: url('../IMG/CAPA.PNG');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
