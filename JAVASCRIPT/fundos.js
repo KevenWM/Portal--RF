@@ -97,7 +97,7 @@ function vpfidc() {
     nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VP FIDC</h3>`
 
     //Muda a descrição
-    descrip.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    descrip.innerHTML = `<p class="title-dmc-desc">O fundo, constituído sob a forma de condomínio aberto com prazo de duração indeterminado, tem como objetivo superar seu benchmark, atrelado ao CDI, mediante aplicação dos recursos em cotas de fundos de investimento de diversas classes, predominantemente em cotas de fundos de investimento em direitos creditórios, padronizados ou não, e em cotas de fundos de investimento em cotas de fundos de investimento em direitos creditórios, padronizados ou não. O resgate das cotas do fundo tem sua cotização em D+128 e liquidação em D+130..</p>`
 
     //Muda o link do maisretorno
 
