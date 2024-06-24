@@ -223,6 +223,6 @@ function vpcredit() {
     //    scrolling="no" frameborder="0"></iframe>
     //</div>`
 
-    pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/EM BREVE.pdf" type="text/pdf">`
+    pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/Credit Selection.pdf" type="text/pdf">`
 }
 
