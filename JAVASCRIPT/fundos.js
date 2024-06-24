@@ -7,25 +7,30 @@ function veneto30() {
     const pdf = document.getElementById('pdf-funds-holder');
 
     //Muda o nome
-    nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VÊNETO 30</h3>`
+    nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VÊNETO CORPORATE</h3>`
 
     //Muda a descrição
-    descrip.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    descrip.innerHTML = `<p class="title-dmc-desc">O fundo tem como objetivo compor uma carteira diversificada com exposição à títulos de renda fixa,  selecionados de forma quantitativa e qualitativa, pela equipe de gestão da Vêneto com o objetivo de obter ganhos de capital mediante operações nos mercados de crédito privado, utilizando-se dos instrumentos disponíveis tanto nos mercados à vista quanto nos mercados de derivativos, podendo recorrer, entre outros, a mecanismos de hedge, de arbitragem e alavancagem para alcançar seus objetivos.</p>`
 
     //Muda o link do maisretorno
-    iframe.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
-    
+    iframe.innerHTML = iframe.innerHTML = `<div class="div-status"> <iframe id="iframe-maisret" class="fundos-maisret"
+    src="https://maisretorno.com/fundo/veneto-corporate-fi-rf-lp" scrolling="no"
+    frameborder="0"></iframe></div>`
+
     //`<div class="div-status">
     //<iframe class="fundos-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
-        //scrolling="no" frameborder="0"></iframe>
-//</div>`
+    //scrolling="no" frameborder="0"></iframe>
+    //</div>`
 
     // Muda a tabela de rendimentos
-    iframe.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    tabela.innerHTML = `<div class="div-status-tabela">
+      <iframe class="tabela-maisret" src="https://maisretorno.com/fundo/veneto-corporate-fi-rf-lp"
+          scrolling="no" frameborder="0"></iframe>
+  </div>`
     //tabela.innerHTML = `<div class="div-status-tabela">
     //<iframe class="tabela-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
     //    scrolling="no" frameborder="0"></iframe>
-//</div>`
+    //</div>`
 
     pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/EM BREVE.pdf" type="text/pdf">`
 }
@@ -102,15 +107,15 @@ function vpfidc() {
 
     //Muda o link do maisretorno
 
-    iframe.innerHTML = 
-    `<div class="div-status">
-    <iframe class="fundos-maisret" src="https://https://maisretorno.com/fundo/vp-credito-estruturado-fic-fim-cp"
+    iframe.innerHTML =
+        `<div class="div-status">
+    <iframe class="fundos-maisret" src="https://maisretorno.com/fundo/vp-credito-estruturado-fic-fim-cp"
         scrolling="no" frameborder="0"></iframe>
 </div>`
     // Muda a tabela de rendimentos
 
     tabela.innerHTML =
-    `<div class="div-status-tabela">
+        `<div class="div-status-tabela">
     <iframe class="tabela-maisret" src="https://maisretorno.com/fundo/vp-credito-estruturado-fic-fim-cp"
      scrolling="no" frameborder="0"></iframe>
 </div>`
@@ -155,25 +160,69 @@ function vpfip() {
     const tabela = document.getElementById('iframe-tabela');
     const pdf = document.getElementById('pdf-funds-holder');
 
-    nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VP FIP</h3>`
+    nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VP LONG ONLY</h3>`
 
     //Muda a descrição
-    descrip.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    descrip.innerHTML = `<p class="title-dmc-desc">O fundo tem como objetivo compor uma carteira diversificada com exposição à fundos de ações, selecionados de forma quantitativa e qualitativa, pela equipe de gestão da Vêneto com o objetivo de obter ganhos de capital mediante operações nos mercados de renda variável, utilizando-se dos instrumentos disponíveis tanto nos mercados à vista quanto nos mercados de derivativos, podendo recorrer, entre outros, a mecanismos de hedge, de arbitragem e alavancagem para alcançar seus objetivos.</p>`
 
     //Muda o link do maisretorno
 
-    iframe.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    iframe.innerHTML = `<div class="div-status">
+    <iframe class="fundos-maisret" src="https://maisretorno.com/fundo/vp-long-only-fia-responsabilidade-limitada"
+        scrolling="no" frameborder="0"></iframe>
+</div>`
     //`<div class="div-status">
     //<iframe class="fundos-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
     //    scrolling="no" frameborder="0"></iframe>
-//</div>`
+    //</div>`
     // Muda a tabela de rendimentos
 
-    tabela.innerHTML = `<p class="title-dmc-desc">EM BREVE.</p>`
+    tabela.innerHTML = `<div class="div-status-tabela">
+ <iframe class="tabela-maisret" src="https://maisretorno.com/fundo/vp-long-only-fia-responsabilidade-limitada"
+     scrolling="no" frameborder="0"></iframe>
+</div>`
     //`<div class="div-status-tabela">
     //<iframe class="tabela-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
     // scrolling="no" frameborder="0"></iframe>
-//</div>`
+    //</div>`
+
+    pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/Long Only.pdf" type="text/pdf">`
 }
 
-pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/EM BREVE.pdf" type="text/pdf">`
+function vpcredit() {
+
+    const nome = document.getElementById('nome-fundo');
+    const descrip = document.getElementById('descrip-fundo');
+    const iframe = document.getElementById('iframe-maisretorno');
+    const tabela = document.getElementById('iframe-tabela');
+    const pdf = document.getElementById('pdf-funds-holder');
+
+    //Muda o nome
+    nome.innerHTML = `<h3 id="nome-fundo" class="title-dmc">VP CREDIT SELECTION</h3>`
+
+    //Muda a descrição
+    descrip.innerHTML = `<p class="title-dmc-desc">O fundo tem como objetivo compor uma carteira diversificada com exposição à títulos de renda fixa,  selecionados de forma quantitativa e qualitativa, pela equipe de gestão da Vêneto com o objetivo de obter ganhos de capital mediante operações nos mercados de crédito privado, utilizando-se dos instrumentos disponíveis tanto nos mercados à vista quanto nos mercados de derivativos, podendo recorrer, entre outros, a mecanismos de hedge, de arbitragem e alavancagem para alcançar seus objetivos.</p>`
+
+    //Muda o link do maisretorno
+    iframe.innerHTML = iframe.innerHTML = `<div class="div-status"> <iframe id="iframe-maisret" class="fundos-maisret"
+    src="https://maisretorno.com/fundo/vp-credit-selection-fic-fim" scrolling="no"
+    frameborder="0"></iframe></div>`
+
+    //`<div class="div-status">
+    //<iframe class="fundos-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
+    //scrolling="no" frameborder="0"></iframe>
+    //</div>`
+
+    // Muda a tabela de rendimentos
+    tabela.innerHTML = `<div class="div-status-tabela">
+      <iframe class="tabela-maisret" src="https://maisretorno.com/fundo/vp-credit-selection-fic-fim"
+          scrolling="no" frameborder="0"></iframe>
+  </div>`
+    //tabela.innerHTML = `<div class="div-status-tabela">
+    //<iframe class="tabela-maisret" src="https://maisretorno.com/fundo/veneto-investimento-fim-cp-ie"
+    //    scrolling="no" frameborder="0"></iframe>
+    //</div>`
+
+    pdf.innerHTML = `<embed id="" width="80%" height="600px" src="../PDF/EM BREVE.pdf" type="text/pdf">`
+}
+
